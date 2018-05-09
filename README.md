@@ -9,3 +9,7 @@ Using Relu function as activition function, which can be modified in activaion_f
 The layers are set in the list using the unit number such as [784,64,64,10]. The first is input layer, the last is output layer. Softmax and cross entropy is used.
 
 Pay attention to the Path you'll be use.
+
+The net is a dictionary, the key for each layer is "'layer_wbaz' + str(i)", where i is an positive integer.
+
+The weight, bias, value_a, value_z are saved in the values corresponding to the keys.
