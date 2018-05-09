@@ -12,4 +12,8 @@ Pay attention to the Path you'll be use.
 
 The net is a dictionary, the key for each layer is "'layer_wbaz' + str(i)", where i is an positive integer.
 
-The weight, bias, value_a, value_z are saved in the values corresponding to the keys.
+The weight, bias, value_a, value_z are saved in the values corresponding to the keys. That is:
+net_dict['layer_wbaz' + str(1)][0] is the weight between input and the first hidden layer;
+net_dict['layer_wbaz' + str(1)][1] is the bias between input and the first hidden layer;
+net_dict['layer_wbaz' + str(1)][2] is the value of the first hidden layer;
+net_dict['layer_wbaz' + str(1)][3] is the activation value of the first hidden layer;
